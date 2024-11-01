@@ -7,7 +7,7 @@ class Score(Turtle):
     def __init__(self):
         super().__init__()
         self.score = 0
-        self.color("red")
+        self.color("white")
         self.penup()
         self.goto(x=0,y=290)
         self.hideturtle()
@@ -23,4 +23,5 @@ class Score(Turtle):
     
     def game_over(self):
         self.goto(x=0,y=0)
+        self.color("red")
         self.write(f"GAME OVER", align=ALIGNMENT, font=FONT)
