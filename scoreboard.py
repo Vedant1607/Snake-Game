@@ -23,4 +23,5 @@ class Score(Turtle):
     
     def game_over(self):
         self.goto(x=0,y=0)
+        self.color("red")
         self.write(f"GAME OVER", align=ALIGNMENT, font=FONT)
